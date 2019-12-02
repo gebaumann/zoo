@@ -77,8 +77,8 @@ if __name__ == "__main__":
     ingresso1 = Ingresso.create(preco = 14.50, cod_ingresso = "452313", visitante = visitante1)
     bilheteria1 = Bilheteria.create(setor = setor1, ingresso = ingresso1)
     produtos1 = Produto.create(tipo_produto = "limpeza", cod_indentificador = 4123733, quantidade = 40)
-    estoque1 = Estoque.create(alimentacao = alimento1, produto = produtos1, forncedor = "mercado tudo")
-    zoologico1 = Zoologico.create(nome = "AnjinhosZoo", setores = setor1, funcionario = funcionario1)
+    estoque1 = Estoque.create(alimentacao = alimento1, produto = produtos1, fornecedor = "mercado tudo")
+    zoologico1 = Zoologico.create(nome = "AnjinhosZoo", setor = setor1, funcionario = funcionario1)
     
     json = list(map(model_to_dict, Alimento.select()))
 
