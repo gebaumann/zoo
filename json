@@ -46,7 +46,14 @@
         },
 
         "Bilheteria": {
-            "localizacao": "norte",
+            "localizacao": {
+                "nome": "Bilheteria",
+                "localizacao": "norte",
+                "animais": {
+                    "animal1"
+                 }
+               }
+                
             "ingresso": {
                 "preco": 14.50,
                 "cod_ingresso": "452313",
