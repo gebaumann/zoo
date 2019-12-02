@@ -45,7 +45,7 @@ class Ingresso(BaseModel):
     visitante = ForeignKeyField(Visitante)
 
 class Bilheteria(BaseModel):
-    localizacao = CharField()
+    localizacao = ForeignKey(Setor)
     ingresso = ForeignKeyField(Ingresso)
 
 class Produto(BaseModel):
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     setor1 = Setor.create(nome = "Savana", localizacao = "sul", animais = animal1, tipo_setor = "terrestre")
     visitante1 = Visitante.create(nome = "Juliana Paes", idade = 42, cpf = "02302502404")
     ingresso1 = Ingresso.create(preco = 14.50, cod_ingresso = "452313", visitante = visitante1)
-    bilheteria1 = Bilheteria.create(localizacao = "norte", ingresso = ingresso1)
+    bilheteria1 = Bilheteria.create(localizacao = setor1, ingresso = ingresso1)
     produtos1 = Produto.create(tipo_produto = "limpeza", cod_indentificador = 4123733, quantidade = 40)
     estoque1 = Estoque.create(alimentacao = alimento1, produto = produtos1, forncedor = "mercado tudo")
     zoologico1 = Zoologico.create(nome = "AnjinhosZoo", setores = setor1, funcionario = funcionario1)
