@@ -45,7 +45,7 @@ class Ingresso(BaseModel):
     visitante = ForeignKeyField(Visitante)
 
 class Bilheteria(BaseModel):
-    setor = ForeignKey(Setor)
+    setor = ForeignKeyField(Setor)
     ingresso = ForeignKeyField(Ingresso)
 
 class Produto(BaseModel):
