@@ -46,7 +46,7 @@
         },
 
         "Bilheteria": {
-            "localizacao": {
+            "setor": {
                 "nome": "Bilheteria",
                 "localizacao": "norte",
                 "animais": {
