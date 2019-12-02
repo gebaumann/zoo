@@ -1,0 +1,95 @@
+{
+    "Zoo": {
+        "Alimento": {
+            "nome": "amora",
+            "quantidade": "44 quilos",
+            "tipo_alimentacao_do_animal": "herbívoro"
+        },
+        "Animal": {
+            "especie": "girafa",
+            "nome": "gigi",
+            "idade": "4 anos",
+            "sexo": "feminino",
+            "alimento": {
+                "nome": "amora",
+                "quantidade": "44 quilos",
+                "tipo_alimentacao_do_animal": "herbívoro"
+            }
+        },
+        "Funcionario": {
+            "nome": "Joaquim Menezes",
+            "cargo": "veterinário",
+            "cpf": "02304202302",
+            "turno": "matutino"
+        },
+        "Setor": {
+            "nome": "Savana",
+            "localizacao": "sul",
+            "animais": {
+                "animal1"
+            },
+            "tipo_setor": "terrestre",
+        },
+        "Visitante": {
+            "nome": "Juliana Paes",
+            "idade": 42,
+            "cpf": "02302502404"
+        },
+        "Ingresso": {
+            "preco": 14.50,
+            "cod_ingresso": "452313",
+            "visitante": {
+                "nome": "Juliana Paes",
+                "idade": 42,
+                "cpf": "02302502404"
+            }
+        },
+
+        "Bilheteria": {
+            "localizacao": "norte",
+            "ingresso": {
+                "preco": 14.50,
+                "cod_ingresso": "452313",
+            }
+        },
+
+        "Produto":{
+            "tipo_produto": "limpeza",
+            "cod_identificador": 4123733,
+            "quantidade": 40
+        },
+
+        "Estoque":{
+            "alimentacao": {
+                "nome": "amora",
+            "quantidade": "44 quilos",
+            "tipo_alimentacao_do_animal": "herbívoro"
+            },
+            "produto": {
+                "tipo_produto": "limpeza",
+            "cod_identificador": 4123733,
+            "quantidade": 40
+            },
+            "fornecedor": "mercado tudo"
+        },
+
+
+        "Zoologico": {
+            "nome": "AnjinhosZoo",
+            "setor": {
+                "nome": "Savana",
+                "localizacao": "sul",
+                "animais": {
+                    "animal1"
+                },
+            "tipo_setor": "terrestre",
+                "funcionario": {
+                    "nome": "Joaquim Menezes",
+                    "cargo": "veterinário",
+                    "cpf": "02304202302",
+                    "turno": "matutino"
+                }
+            }
+        }
+    }
+}    
